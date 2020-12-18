@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '@shortURLing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+shortURL('renders cmprs.it title', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const title = screen.getByText(/cmprs.it/);
+  expect(title).toBeInTheDocument();
 });
