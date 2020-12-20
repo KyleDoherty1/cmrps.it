@@ -1,5 +1,6 @@
 import './App.css';
 import React, { Component } from 'react';
+
 class App extends Component {
 	state = {
 		showButton: false,
@@ -40,8 +41,8 @@ class App extends Component {
 
 	render() {
 		return (
-			<header className='App-header'>
-				<div className='box has-text-centered'>
+			<div>
+				<div className='box has-text-centered main'>
 					<h1 className='title'>cmprs.it</h1>
 					<h2 className='subtitle'>
 						<i>
@@ -76,7 +77,7 @@ class App extends Component {
 						<a href={this.state.shortURL}>{this.state.shortURL}</a>
 					</div>
 				</div>
-			</header>
+			</div>
 		);
 	}
 }
