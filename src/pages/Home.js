@@ -74,7 +74,7 @@ class Home extends Component {
 						style={{ display: this.state.showButton ? 'block' : 'none' }}
 					>
 						<h2 id='compressedURLText'>&darr; your compressed url &darr;</h2>
-						<a href={'https://cwww.cmprs.it/' + this.state.shortURL}>{'cmprs.it/'+this.state.shortURL}</a>
+						<a href={'https://www.cmprs.it/' + this.state.shortURL}>{'cmprs.it/'+this.state.shortURL}</a>
 					</div>
 				</div>
 			</div>
