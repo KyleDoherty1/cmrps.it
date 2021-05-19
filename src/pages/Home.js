@@ -1,5 +1,7 @@
 // import './App.css';
 import React, { Component } from 'react';
+import Logo from './logo.svg';
+import './style.css';
 
 class Home extends Component {
 	state = {
@@ -42,15 +44,9 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<div className='box has-text-centered main'>
-					<h1 className='title'>cmprs.it</h1>
-					<h2 className='subtitle'>
-						<i>
-							<b>c</b>o<b>m</b>
-							<b>p</b>
-							<b>r</b>e<b>s</b>s your url
-						</i>
-					</h2>
+				<div className='box has-text-centered main box-color content'>
+				<img src={Logo} className="logo" />
+
 					<div className='field is-grouped'>
 						<p className='control is-expanded'>
 							<input

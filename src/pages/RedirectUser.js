@@ -1,6 +1,6 @@
 import React, { useEffect, useState }from "react";
 import { useParams, Redirect } from "react-router-dom";
-var loading = require('./loading.gif')
+import Loading from './loading.gif';
 
 const RedirectUser = () => {
   const { slug } = useParams();
@@ -29,7 +29,9 @@ const RedirectUser = () => {
   });
 
   return (
-    <img src={require('./loading.gif')} />
+    <div className='box has-text-centered main box-color content'>
+          <img src={Loading} className='loading'/>
+    </div>
 
 
 )

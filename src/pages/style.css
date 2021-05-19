@@ -1,0 +1,15 @@
+.logo {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+  }
+
+.content {
+margin: 0 auto;
+width: 50%;
+}
+
+.loading{
+    height: 200px;
+    width: 200px;
+}
