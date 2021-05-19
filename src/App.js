@@ -6,7 +6,7 @@ class App extends Component {
 		showButton: false,
 		longURL: '',
 		slug: '',
-		shortURL: 'https://cmprs.it/' + this.slug,
+		shortURL: process.env.REACT_APP_BACKEND_GET_URL + this.slug,
 	};
 
 	handleChange = (event) => {
@@ -14,7 +14,7 @@ class App extends Component {
 	};
 
 	callAPI = async () => {
-		const response = await fetch(process.env.REACT_APP_BACKEND_URL, {
+		const response = await fetch(process.env.REACT_APP_BACKEND_CREATE_URL, {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json',
@@ -28,7 +28,7 @@ class App extends Component {
 			console.log(result);
 			this.setState({
 				slug: result.shortURL,
-				shortURL: 'https://cmprs.it/' + result.shortURL,
+				shortURL: process.env.REACT_APP_BACKEND_GET_URL + result.shortURL,
 				showButton: true,
 			});
 			console.log(this.state.shortURL);
