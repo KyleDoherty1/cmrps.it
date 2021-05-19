@@ -1,5 +1,6 @@
 import React, { useEffect, useState }from "react";
-import { useParams,Redirect } from "react-router-dom";
+import { useParams, Redirect } from "react-router-dom";
+var loading = require('./loading.gif')
 
 const RedirectUser = () => {
   const { slug } = useParams();
@@ -14,7 +15,9 @@ const RedirectUser = () => {
     if (response.ok) {
       const result = await response.json();
       window.location.href = result.url;
-    } else if (response.status === 400) {
+    } else if (response.status === 404) {
+      console.log('lost')
+      window.location.href = '/lost';
     } else {
       const result = await response.json();
       this.error = result.message;
@@ -26,8 +29,10 @@ const RedirectUser = () => {
   });
 
   return (
-    <h1>Redirecting</h1>
-  )
+    <img src={require('./loading.gif')} />
+
+
+)
 
 };
 
