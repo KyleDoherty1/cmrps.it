@@ -44,11 +44,11 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				<div className='box has-text-centered main box-color content'>
+				<div>
 				<img src={Logo} className="logo" />
 
-					<div className='field is-grouped'>
-						<p className='control is-expanded'>
+					<div>
+						<p>
 							<input
 								className='input'
 								type='text'
@@ -58,7 +58,6 @@ class Home extends Component {
 							/>
 						</p>
 						<button
-							className='button is-info'
 							id='myButton'
 							onClick={this.callAPI}
 						>

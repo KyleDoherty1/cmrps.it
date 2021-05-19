@@ -8,7 +8,7 @@ import RedirectUser from "./pages/RedirectUser";
 function App() {
   return (
     <BrowserRouter>
-      <div className="container mt-2" style={{ marginTop: 40 }}>
+      <div>
         <Switch>
           <Route exact path="/">
             <Home />

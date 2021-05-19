@@ -29,7 +29,7 @@ const RedirectUser = () => {
   });
 
   return (
-    <div className='box has-text-centered main box-color content'>
+    <div>
           <img src={Loading} className='loading'/>
     </div>
 
