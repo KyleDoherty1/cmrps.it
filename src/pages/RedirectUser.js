@@ -1,5 +1,5 @@
-import React, { useEffect, useState }from "react";
-import { useParams, Redirect } from "react-router-dom";
+import React, { useEffect }from "react";
+import { useParams } from "react-router-dom";
 import Loading from './loading.gif';
 
 const RedirectUser = () => {
@@ -30,7 +30,7 @@ const RedirectUser = () => {
 
   return (
     <div>
-          <img src={Loading} className='loading'/>
+          <img src={Loading} className='loading' alt='loading-con'/>
     </div>
 
 
